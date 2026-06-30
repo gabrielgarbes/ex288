@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+cp /tmp/src/*.html /
+
+echo "Page built on $(date '+%b %d, %Y')" > /info.html
