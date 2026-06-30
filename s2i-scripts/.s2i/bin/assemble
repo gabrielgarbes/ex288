@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-chmod +x s2i-scripts/.s2i/bin/assemble
+cp -Rf /tmp/src/*.html /opt/app-root/src/
 
-cp -Rf /tmp/src/*.html /
-
-echo "Page built on $(date '+%b %d, %Y')" > /info.html
+echo "Page built on $(date '+%b %d, %Y')" > /opt/app-root/src/info.html
